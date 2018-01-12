@@ -1,0 +1,18 @@
+// Component Variables
+//–––––––––––––––––––––––––––––––––––––––––––––––––– 
+
+// Tags
+//–––––––––––––––––––––––––––––––––––––––––––––––––– 
+
+$tag-font-size:                 85% !default;
+$tag-font-weight:               400 !default;
+$tag-padding:                   .4em .45em !default;
+$tag-anchor-transition:         background-color ease-in-out $animation-speed-fast, border-color ease-in-out $animation-speed-fast !default;
+
+$tags: (
+    // name                     background                      font-color
+    white:                    map-get($colors, white)       map-get($colors, black),
+    black:                    map-get($colors, black)       map-get($colors, white),
+    primary:                    map-get($colors, primary)       map-get($colors, white),
+    secondary:                  map-get($colors, secondary)     map-get($colors, black)
+) !default;

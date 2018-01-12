@@ -1,0 +1,49 @@
+// Tags
+//–––––––––––––––––––––––––––––––––––––––––––––––––– 
+
+
+/* base tag style */
+
+.tag {
+    border-radius: $global-radius;
+    display: inline-block;
+    font-size: $tag-font-size;
+    font-weight: $tag-font-weight;
+    padding: $tag-padding;
+    line-height: 1;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: baseline;
+}
+
+/* coloured variations */
+
+@each $name, $colors in $tags {
+    $tag-bg: nth($colors, 1);
+    $tag-font: nth($colors, 2);
+
+    // start with a border color half of the $darken-hover-percent to get a slight visual contrast
+    $tag-border: darken($tag-bg, ($darken-hover-percent / 2));
+
+    .tag-#{$name} {
+        background: $tag-bg;
+        border: solid 1px $tag-border;
+        color: $tag-font;
+    }
+
+    /* anchors with a tag class */
+
+    .tag[href] {
+        transition: $tag-anchor-transition;
+    }
+
+    // when we roll over we will use the full percentage to adjust the colors
+    $tag-border-hover: darken($tag-border, $darken-hover-percent);
+    $tag-bg-hover: darken($tag-bg, $darken-hover-percent);
+
+    .tag-#{$name}[href]:hover {
+        background: $tag-bg-hover;
+        border-color: $tag-border-hover;
+        color: $tag-font;
+    }
+}
