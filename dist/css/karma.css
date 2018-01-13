@@ -1443,6 +1443,96 @@ blockquote{
   border:solid 1px #b2e9ff;
   color:#3e3e3e; }
 
+ul.checkboxes,
+ul.radios{
+  list-style:none; }
+  ul.checkboxes li,
+  ul.radios li{
+    margin-bottom:.5rem;
+    position:relative; }
+
+.checkbox,
+ul.checkboxes,
+ul.radios{
+  margin-bottom:1.5rem; }
+  .checkbox label,
+  ul.checkboxes label,
+  ul.radios label{
+    cursor:pointer;
+    display:inline-block;
+    font-weight:400;
+    margin-bottom:0;
+    padding:0 4rem;
+    position:relative; }
+  .checkbox label span,
+  ul.checkboxes label span,
+  ul.radios label span{
+    top:0;
+    right:auto;
+    bottom:auto;
+    left:0;
+    position:absolute;
+    background:white;
+    border:1px solid #e6e6e6;
+    height:25px;
+    width:25px; }
+  .checkbox input,
+  ul.checkboxes input,
+  ul.radios input{
+    position:absolute;
+    visibility:hidden; }
+  .checkbox input + span:after,
+  ul.checkboxes input + span:after,
+  ul.radios input + span:after{
+    content:"";
+    display:block;
+    position:absolute;
+    opacity:0; }
+  .checkbox input:checked + span:after,
+  ul.checkboxes input:checked + span:after,
+  ul.radios input:checked + span:after{
+    opacity:1; }
+  .checkbox label:hover input:not(:checked):not(:disabled) + span:after,
+  ul.checkboxes label:hover input:not(:checked):not(:disabled) + span:after,
+  ul.radios label:hover input:not(:checked):not(:disabled) + span:after{
+    opacity:0.5; }
+  .checkbox label input:disabled + span,
+  ul.checkboxes label input:disabled + span,
+  ul.radios label input:disabled + span{
+    cursor:not-allowed; }
+
+.checkbox label span,
+ul.checkboxes label span{
+  border-radius:0.25rem; }
+
+.checkbox input[type=checkbox] + span:after,
+ul.checkboxes input[type=checkbox] + span:after{
+  top:7px;
+  right:auto;
+  bottom:auto;
+  left:5px;
+  position:absolute;
+  border:3px solid #33c3f0;
+  border-top:none;
+  border-right:none;
+  height:7px;
+  width:13px;
+  -webkit-transform:rotate(-45deg);
+  -o-transform:rotate(-45deg);
+  transform:rotate(-45deg); }
+
+ul.radios label span{
+  border-radius:50%; }
+
+ul.radios input[type=radio] + span:after{
+  top:4px;
+  right:4px;
+  bottom:4px;
+  left:4px;
+  position:absolute;
+  background:#33c3f0;
+  border-radius:50%; }
+
 .input-group{
   display:-webkit-box;
   display:-webkit-flex;
