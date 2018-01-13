@@ -46,3 +46,18 @@ $tags: (
     primary:                    color(primary)                  color(white),
     secondary:                  color(secondary)                color(black)
 ) !default;
+
+
+// Tooltips
+//–––––––––––––––––––––––––––––––––––––––––––––––––– 
+
+$tooltip-background:            rgba(color(black), .9) !default;
+$tooltip-text-color:            color(white) !default;
+$tooltip-font-size:             85% !default;
+$tooltip-padding:               .5em 1em !default;
+$tooltip-arrow-height:          6px !default;
+$tooltip-distance:              6px !default;
+$tooltip-transition:            all .18s ease-out .18s !default;
+
+// add the zindex to your z-layers
+$z-layers: map-merge((tooltip: 100 ), $z-layers);
