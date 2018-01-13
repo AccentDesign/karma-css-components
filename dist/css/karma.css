@@ -1442,6 +1442,51 @@ blockquote{
   background:#ccf1ff;
   border:solid 1px #b2e9ff;
   color:#3e3e3e; }
+
+.input-group{
+  display:-webkit-box;
+  display:-webkit-flex;
+  display:-ms-flexbox;
+  display:flex; }
+
+.input-group > *{
+  border-radius:0 !important;
+  margin-bottom:0 !important; }
+
+.input-group-addon{
+  padding:0 1rem;
+  white-space:nowrap; }
+
+.input-group > input,
+.input-group-addon{
+  display:-webkit-box;
+  display:-webkit-flex;
+  display:-ms-flexbox;
+  display:flex;
+  -webkit-box-orient:vertical;
+  -webkit-box-direction:normal;
+  -webkit-flex-direction:column;
+  -ms-flex-direction:column;
+  flex-direction:column;
+  -webkit-box-pack:center;
+  -webkit-justify-content:center;
+  -ms-flex-pack:center;
+  justify-content:center; }
+
+.input-group > input{
+  -webkit-box-flex:1;
+  -webkit-flex:1 1 auto;
+  -ms-flex:1 1 auto;
+  flex:1 1 auto;
+  width:1%; }
+
+.input-group > *:first-child{
+  border-top-left-radius:0.25rem !important;
+  border-bottom-left-radius:0.25rem !important; }
+
+.input-group > *:last-child{
+  border-top-right-radius:0.25rem !important;
+  border-bottom-right-radius:0.25rem !important; }
 .tag{
   border-radius:0.25rem;
   display:inline-block;
