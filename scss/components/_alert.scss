@@ -1,0 +1,31 @@
+// Alerts
+//–––––––––––––––––––––––––––––––––––––––––––––––––– 
+
+
+/* base alert style */
+
+.alert {
+    position: relative;
+    padding: $alert-padding;
+    margin-bottom: $generic-margin-bottom;
+    border: 1px solid $border-color;
+    border-radius: $global-radius;
+}
+
+
+/* coloured variations */
+
+@each $name, $colors in $alerts {
+    $alert-bg: nth($colors, 1);
+    $alert-font: nth($colors, 2);
+
+    // border color half of the $darken-hover-percent to get a slight visual contrast
+    $alert-border: darken($alert-bg, ($darken-hover-percent / 2));
+
+    .alert-#{$name} {
+        background: $alert-bg;
+        border: solid 1px $alert-border;
+        color: $alert-font;
+    }
+
+}

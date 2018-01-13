@@ -1,6 +1,23 @@
 // Component Variables
 //–––––––––––––––––––––––––––––––––––––––––––––––––– 
 
+
+// Alerts
+//–––––––––––––––––––––––––––––––––––––––––––––––––– 
+
+$alert-padding:                 1.5rem 2rem !default;
+
+$alerts: (
+    // name                     background                      font-color
+    primary:                    lighten(color(primary), 30%)    $font-color,
+    secondary:                  color(secondary)                $font-color,
+    success:                    lighten(color(green), 35%)    $font-color,
+    danger:                     lighten(color(red), 30%)      $font-color,
+    warning:                    lighten(color(yellow), 35%)   $font-color,
+    info:                       lighten(color(aqua), 15%)     $font-color
+) !default;
+
+
 // Tags
 //–––––––––––––––––––––––––––––––––––––––––––––––––– 
 
@@ -11,8 +28,8 @@ $tag-anchor-transition:         background-color ease-in-out $animation-speed-fa
 
 $tags: (
     // name                     background                      font-color
-    white:                    map-get($colors, white)       map-get($colors, black),
-    black:                    map-get($colors, black)       map-get($colors, white),
-    primary:                    map-get($colors, primary)       map-get($colors, white),
-    secondary:                  map-get($colors, secondary)     map-get($colors, black)
+    white:                    color(white)                  color(black),
+    black:                    color(black)                  color(white),
+    primary:                    color(primary)                  color(white),
+    secondary:                  color(secondary)                color(black)
 ) !default;

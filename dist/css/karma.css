@@ -1407,6 +1407,41 @@ blockquote{
   border-left:3px solid #e6e6e6; }
   blockquote :last-child{
     margin-bottom:0; }
+.alert{
+  position:relative;
+  padding:1.5rem 2rem;
+  margin-bottom:1.5rem;
+  border:1px solid #e6e6e6;
+  border-radius:0.25rem; }
+.alert-primary{
+  background:#c2edfa;
+  border:solid 1px #aae6f9;
+  color:#3e3e3e; }
+
+.alert-secondary{
+  background:#f0f0f0;
+  border:solid 1px #e3e3e3;
+  color:#3e3e3e; }
+
+.alert-success{
+  background:#bcf0c2;
+  border:solid 1px #a8ebaf;
+  color:#3e3e3e; }
+
+.alert-danger{
+  background:#ffd2cf;
+  border:solid 1px #ffbab6;
+  color:#3e3e3e; }
+
+.alert-warning{
+  background:#fff5b3;
+  border:solid 1px #fff199;
+  color:#3e3e3e; }
+
+.alert-info{
+  background:#ccf1ff;
+  border:solid 1px #b2e9ff;
+  color:#3e3e3e; }
 .tag{
   border-radius:0.25rem;
   display:inline-block;
