@@ -10,15 +10,14 @@
   
     // base content
     &:after {
+        @include pseudo($content: attr(data-tooltip));
         background: $tooltip-background;
         border-radius: $global-radius;
         color: $tooltip-text-color;
-        content: attr(data-tooltip);
         font-size: $tooltip-font-size;
         opacity: 0;
         padding: $tooltip-padding;
         pointer-events: none;
-        position: absolute;
         transition: $tooltip-transition;
         white-space: nowrap;
         z-index: zindex(tooltip);
@@ -26,7 +25,7 @@
   
     // base arrow
     &:before {
-        content: '';
+        @include pseudo;
         opacity: 0;
         pointer-events: none;
         transition: $tooltip-transition;

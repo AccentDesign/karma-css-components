@@ -1577,6 +1577,53 @@ ul.radios input[type=radio] + span:after{
 .input-group > *:last-child{
   border-top-right-radius:0.25rem !important;
   border-bottom-right-radius:0.25rem !important; }
+
+.switch{
+  display:inline-block;
+  margin-bottom:0;
+  position:relative;
+  width:60px;
+  height:34px; }
+  .switch input{
+    display:none; }
+  .switch .slider{
+    top:0;
+    right:0;
+    bottom:0;
+    left:0;
+    position:absolute;
+    cursor:pointer;
+    background:#f0f0f0;
+    border-radius:0.25rem;
+    -webkit-transition:0.3s;
+    -o-transition:0.3s;
+    transition:0.3s; }
+  .switch .slider:before{
+    content:"";
+    display:block;
+    position:absolute;
+    top:4px;
+    right:auto;
+    bottom:auto;
+    left:4px;
+    position:absolute;
+    height:26px;
+    width:26px;
+    background:white;
+    border-radius:0.25rem;
+    -webkit-transition:0.3s;
+    -o-transition:0.3s;
+    transition:0.3s; }
+  .switch input:checked + .slider{
+    background:#33c3f0; }
+  .switch input:checked + .slider:before{
+    -webkit-transform:translateX(26px);
+    -o-transform:translateX(26px);
+    transform:translateX(26px); }
+  .switch .slider-round{
+    border-radius:34px; }
+  .switch .slider-round:before{
+    border-radius:50%; }
 .tag{
   border-radius:0.25rem;
   display:inline-block;
@@ -1646,22 +1693,25 @@ ul.radios input[type=radio] + span:after{
   position:relative;
   cursor:pointer; }
   [data-tooltip]:after{
+    content:attr(data-tooltip);
+    display:block;
+    position:absolute;
     background:rgba(17, 17, 17, 0.9);
     border-radius:0.25rem;
     color:white;
-    content:attr(data-tooltip);
     font-size:85%;
     opacity:0;
     padding:0.5em 1em;
     pointer-events:none;
-    position:absolute;
     -webkit-transition:all 0.18s ease-out 0.18s;
     -o-transition:all 0.18s ease-out 0.18s;
     transition:all 0.18s ease-out 0.18s;
     white-space:nowrap;
     z-index:100; }
   [data-tooltip]:before{
-    content:'';
+    content:"";
+    display:block;
+    position:absolute;
     opacity:0;
     pointer-events:none;
     -webkit-transition:all 0.18s ease-out 0.18s;

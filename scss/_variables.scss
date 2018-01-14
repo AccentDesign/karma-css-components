@@ -31,6 +31,19 @@ $checkbox-font-weight:          400 !default;
 $input-group-addon-y-padding:   1rem !default;
 
 
+// Switches
+//–––––––––––––––––––––––––––––––––––––––––––––––––– 
+
+$switch-height:                 34px;
+$switch-width:                  60px;
+$switch-padding:                4px;
+$switch-default-border-radius:  $global-radius;
+$switch-background:             color(secondary);
+$switch-background-on:          color(primary);
+$switch-slider-background:      color(white);
+$switch-slider-transition:      .3s;
+
+
 // Tags
 //–––––––––––––––––––––––––––––––––––––––––––––––––– 
 

@@ -1,0 +1,56 @@
+// Switches
+//––––––––––––––––––––––––––––––––––––––––––––––––––
+
+
+// calc the slider button size
+$switch-slider-size:        $switch-height - ($switch-padding * 2);
+// calc the x-axis travel of the slider
+$switch-slider-x-travel:    $switch-width - $switch-slider-size - ($switch-padding * 2);
+
+
+.switch {
+    display: inline-block;
+    margin-bottom: 0;
+    position: relative;
+    width: $switch-width;
+    height: $switch-height;
+
+    input {
+        display: none;
+    }
+
+    .slider {
+        @include position(0, 0, 0, 0, absolute);
+        cursor: pointer;
+        background: $switch-background;
+        border-radius: $switch-default-border-radius; 
+        transition: $switch-slider-transition;
+    }
+      
+    .slider:before {
+        @include pseudo;
+        @include position($top: $switch-padding, $left: $switch-padding);
+        height: $switch-slider-size;
+        width: $switch-slider-size;
+        background: $switch-slider-background;
+        border-radius: $switch-default-border-radius; 
+        transition: $switch-slider-transition;
+    }
+      
+    input:checked + .slider {
+        background: $switch-background-on;
+    }
+      
+    input:checked + .slider:before {
+        transform: translateX($switch-slider-x-travel);
+    }
+      
+    .slider-round {
+        border-radius: $switch-height;
+    }
+      
+    .slider-round:before {
+        border-radius: 50%;
+    }
+
+}
