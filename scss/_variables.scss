@@ -11,10 +11,10 @@ $alerts: (
     // name                     background                      font-color
     primary:                    lighten(color(primary), 30%)    $font-color,
     secondary:                  color(secondary)                $font-color,
-    success:                    lighten(color(green), 35%)    $font-color,
-    danger:                     lighten(color(red), 30%)      $font-color,
-    warning:                    lighten(color(yellow), 35%)   $font-color,
-    info:                       lighten(color(aqua), 15%)     $font-color
+    success:                    lighten(color(green), 35%)      $font-color,
+    danger:                     lighten(color(red), 30%)        $font-color,
+    warning:                    lighten(color(yellow), 35%)     $font-color,
+    info:                       lighten(color(aqua), 15%)       $font-color
 ) !default;
 
 
@@ -41,8 +41,8 @@ $tag-anchor-transition:         background-color ease-in-out $animation-speed-fa
 
 $tags: (
     // name                     background                      font-color
-    white:                    color(white)                  color(black),
-    black:                    color(black)                  color(white),
+    white:                      color(white)                    color(black),
+    black:                      color(black)                    color(white),
     primary:                    color(primary)                  color(white),
     secondary:                  color(secondary)                color(black)
 ) !default;
