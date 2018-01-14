@@ -5,155 +5,178 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <title>Index</title>
         <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
-        <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600' rel='stylesheet' type='text/css'>
+        <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700' rel='stylesheet' type='text/css'>
         <link rel="stylesheet" href="dist/css/karma.min.css">
     </head>
-    <body>
+    <body style="padding: 5rem;">
         <div class="container">
-
-            <section>
-                <h1>Alerts</h1>
-                <div class="alert">This is a default alert!</div>
-                <div class="alert alert-primary">This is a primary alert!</div>
-                <div class="alert alert-secondary">This is a secondary alert!</div>
-                <div class="alert alert-success">This is a success alert!</div>
-                <div class="alert alert-danger">This is a danger alert!</div>
-                <div class="alert alert-warning">This is a warning alert!</div>
-                <div class="alert alert-info">This is an info alert!</div>
-            </section>
-
-            <section>
-                <h1>Checkboxes and radios</h1>
-                <p>Single checkbox</p>
-                <div class="checkbox">
-                    <label for="cb1"><input id="cb1" type="checkbox"><span></span> Single Checkbox</label>
-                </div>
-                <p>List</p>
-                <ul class="checkboxes">
-                    <li><label><input type="checkbox"><span></span> Checkbox 1</label></li>
-                    <li><label><input type="checkbox"><span></span> Checkbox 2</label></li>
-                    <li><label><input type="checkbox"><span></span> Checkbox 3</label></li>
+            <nav role="navigation">
+                Examples
+                <ul>
+                    <li><a href="#alerts">Alerts</a></li>
+                    <li><a href="#checkboxes">Checkboxes and radios</a></li>
+                    <li><a href="#input-groups">Input Groups</a></li>
+                    <li><a href="#tags">Tags</a></li>
+                    <li><a href="#tooltips">Tooltips</a></li>
                 </ul>
-                <ul class="radios">
-                    <li><label><input type="radio" name="radio1"><span></span> Radio 1</label></li>
-                    <li><label><input type="radio" name="radio1"><span></span> Radio 2</label></li>
-                    <li><label><input type="radio" name="radio1"><span></span> Radio 3</label></li>
-                </ul>
-                <p>Inline list</p>
-                <ul class="checkboxes">
-                    <li class="d-inline-block"><label><input type="checkbox"><span></span> Checkbox 1</label></li>
-                    <li class="d-inline-block"><label><input type="checkbox"><span></span> Checkbox 2</label></li>
-                    <li class="d-inline-block"><label><input type="checkbox"><span></span> Checkbox 3</label></li>
-                </ul>
-                <ul class="radios">
-                    <li class="d-inline-block"><label><input type="radio" name="radio1"><span></span> Radio 1</label></li>
-                    <li class="d-inline-block"><label><input type="radio" name="radio1"><span></span> Radio 2</label></li>
-                    <li class="d-inline-block"><label><input type="radio" name="radio1"><span></span> Radio 3</label></li>
-                </ul>
-            </section>
-    
-            <section>
-                <h1>Input Groups</h1>
-                <p>
-                    <div class="input-group">
-                        <div class="input-group-addon">Before</div><input type="text">
-                    </div>
-                </p>
-                <p>
-                    <div class="input-group">
-                        <input type="text"><div class="input-group-addon">After</div>
-                    </div>
-                </p>    
-                <p>
-                    <div class="input-group">
-                        <div class="input-group-addon">Before</div><input type="text"><div class="input-group-addon">After</div>
-                    </div>
-                </p>
-                <p>
-                    <div class="input-group">
-                        <div class="input-group-addon b-silver">Before</div><input type="text">
-                    </div>
-                </p>
-                <p>
-                    <div class="input-group">
-                        <input type="text"><div class="input-group-addon b-silver">After</div>
-                    </div>
-                </p>
-                <p>
-                    <div class="input-group">
-                        <div class="input-group-addon b-silver">Before</div><input type="text"><div class="input-group-addon b-silver">After</div>
-                    </div>
-                </p>
-                <p>
-                    <div class="input-group">
-                        <button class="button button-primary">Button</button><input type="text">
-                    </div>
-                </p>
-                <p>
-                    <div class="input-group">
-                        <input type="text"><button class="button button-primary">Button</button>
-                    </div>
-                </p>
-                <p>
-                    <div class="input-group">
-                        <button class="button button-primary">Button</button>
-                        <input type="text">
-                        <button class="button button-primary">Button</button>
-                    </div>
-                </p>
-                <p>
-                    <div class="input-group">
-                        <div class="input-group-addon b-silver">First name</div>
-                        <input type="text">
-                        <div class="input-group-addon b-silver">Last name</div>
-                        <input type="text">
-                    </div>
-                </p>
-            </section>
-            
-            <section>
-                <h1>Tags</h1>
-                <p>Tags scale to match the size of the immediate parent element by using relative font sizing and em units.</p>
+            </nav>
 
-                <h3>Basic Tags</h3>
-                <p>Basic set of coloured tags.</p>
-                <span class="tag tag-white">White</span>
-                <span class="tag tag-black">Black</span>
-                <span class="tag tag-primary">Primary</span>
-                <span class="tag tag-secondary">Secondary</span>
+            <main role="main">
+                
+                <section id="alerts">
+                    <header><h1>Alerts</h1></header>
+                    <article>
+                        <div class="alert">This is a default alert!</div>
+                        <div class="alert alert-primary">This is a primary alert!</div>
+                        <div class="alert alert-secondary">This is a secondary alert!</div>
+                        <div class="alert alert-success">This is a success alert!</div>
+                        <div class="alert alert-danger">This is a danger alert!</div>
+                        <div class="alert alert-warning">This is a warning alert!</div>
+                        <div class="alert alert-info">This is an info alert!</div>
+                    </article> 
+                </section>
 
-                <br><br>
-                <h3>Anchor Tags</h3>
-                <p>Tag classes can be placed on anchors, they have a rolover effect identical to a button.</p>
-                <a href="#" class="tag tag-white">White</a>
-                <a href="#" class="tag tag-black">Black</a>
-                <a href="#" class="tag tag-primary">Primary</a>
-                <a href="#" class="tag tag-secondary">Secondary</a>
+                <section id="checkboxes">
+                    <header><h1>Checkboxes and radios</h1></header>
+                    <article>
+                        <p>Single checkbox</p>
+                        <div class="checkbox">
+                            <label for="cb1"><input id="cb1" type="checkbox"><span></span> Single Checkbox</label>
+                        </div>
+                        <p>List</p>
+                        <ul class="checkboxes">
+                            <li><label><input type="checkbox"><span></span> Checkbox 1</label></li>
+                            <li><label><input type="checkbox"><span></span> Checkbox 2</label></li>
+                            <li><label><input type="checkbox"><span></span> Checkbox 3</label></li>
+                        </ul>
+                        <ul class="radios">
+                            <li><label><input type="radio" name="radio1"><span></span> Radio 1</label></li>
+                            <li><label><input type="radio" name="radio1"><span></span> Radio 2</label></li>
+                            <li><label><input type="radio" name="radio1"><span></span> Radio 3</label></li>
+                        </ul>
+                        <p>Inline list</p>
+                        <ul class="checkboxes">
+                            <li class="d-inline-block"><label><input type="checkbox"><span></span> Checkbox 1</label></li>
+                            <li class="d-inline-block"><label><input type="checkbox"><span></span> Checkbox 2</label></li>
+                            <li class="d-inline-block"><label><input type="checkbox"><span></span> Checkbox 3</label></li>
+                        </ul>
+                        <ul class="radios">
+                            <li class="d-inline-block"><label><input type="radio" name="radio1"><span></span> Radio 1</label></li>
+                            <li class="d-inline-block"><label><input type="radio" name="radio1"><span></span> Radio 2</label></li>
+                            <li class="d-inline-block"><label><input type="radio" name="radio1"><span></span> Radio 3</label></li>
+                        </ul>
+                    </article>
+                </section>
 
-                <br><br>
-                <h3>Tags in Headings</h3>
-                <p>Tags can also be placed in headings.</p>
-                <h1>Heading <span class="tag tag-secondary">New</span></h1>
-                <h2>Heading <span class="tag tag-secondary">New</span></h2>
-                <h3>Heading <span class="tag tag-secondary">New</span></h3>
-                <h4>Heading <span class="tag tag-secondary">New</span></h4>
-                <h5>Heading <span class="tag tag-secondary">New</span></h5>
-                <h6>Heading <span class="tag tag-secondary">New</span></h6>
-            </section>
+                <section id="input-groups">
+                    <header><h1>Input Groups</h1></header>
+                    <article>
+                        <p>
+                            <div class="input-group">
+                                <div class="input-group-addon">Before</div><input type="text">
+                            </div>
+                        </p>
+                        <p>
+                            <div class="input-group">
+                                <input type="text"><div class="input-group-addon">After</div>
+                            </div>
+                        </p>    
+                        <p>
+                            <div class="input-group">
+                                <div class="input-group-addon">Before</div><input type="text"><div class="input-group-addon">After</div>
+                            </div>
+                        </p>
+                        <p>
+                            <div class="input-group">
+                                <div class="input-group-addon b-silver">Before</div><input type="text">
+                            </div>
+                        </p>
+                        <p>
+                            <div class="input-group">
+                                <input type="text"><div class="input-group-addon b-silver">After</div>
+                            </div>
+                        </p>
+                        <p>
+                            <div class="input-group">
+                                <div class="input-group-addon b-silver">Before</div><input type="text"><div class="input-group-addon b-silver">After</div>
+                            </div>
+                        </p>
+                        <p>
+                            <div class="input-group">
+                                <button class="button button-primary">Button</button><input type="text">
+                            </div>
+                        </p>
+                        <p>
+                            <div class="input-group">
+                                <input type="text"><button class="button button-primary">Button</button>
+                            </div>
+                        </p>
+                        <p>
+                            <div class="input-group">
+                                <button class="button button-primary">Button</button>
+                                <input type="text">
+                                <button class="button button-primary">Button</button>
+                            </div>
+                        </p>
+                        <p>
+                            <div class="input-group">
+                                <div class="input-group-addon b-silver">First name</div>
+                                <input type="text">
+                                <div class="input-group-addon b-silver">Last name</div>
+                                <input type="text">
+                            </div>
+                        </p>
+                    </article>
+                </section>
 
-            <section>
-                <h2>Tooltip</h2>
-                <p>Tooltips are set via a data-tooltip attribute.</p>
-                <p class="text-center">
-                    <button class="button button-primary" data-tooltip="I'm a tooltip!">Button with tooltip</button>
-                </p>
-                <p class="text-center">A tooltip on the <a href="#" data-tooltip="I'm a tooltip!" data-tooltip-pos="up">top</a></p>
-                <p class="text-center">A tooltip on the <a href="#" data-tooltip="I'm a tooltip!" data-tooltip-pos="down">bottom</a></p>
-                <p class="text-center">A tooltip on the <a href="#" data-tooltip="I'm a tooltip!" data-tooltip-pos="right">right</a></p>
-                <p class="text-center">A tooltip on the <a href="#" data-tooltip="I'm a tooltip!" data-tooltip-pos="left">left</a></p>
-                <p class="text-center">A tooltip thats always visible on the <a href="#" data-tooltip="I'm a tooltip!" data-tooltip-pos="right" data-tooltip-visible>right</a></p>
-            </section>
+                <section id="tags">
+                    <header><h1>Tags</h1></header>
+                    <article>
+                        <p>Tags scale to match the size of the immediate parent element by using relative font sizing and em units.</p>
 
+                        <h3>Basic Tags</h3>
+                        <p>Basic set of coloured tags.</p>
+                        <span class="tag tag-white">White</span>
+                        <span class="tag tag-black">Black</span>
+                        <span class="tag tag-primary">Primary</span>
+                        <span class="tag tag-secondary">Secondary</span>
+        
+                        <br><br>
+                        <h3>Anchor Tags</h3>
+                        <p>Tag classes can be placed on anchors, they have a rolover effect identical to a button.</p>
+                        <a href="#" class="tag tag-white">White</a>
+                        <a href="#" class="tag tag-black">Black</a>
+                        <a href="#" class="tag tag-primary">Primary</a>
+                        <a href="#" class="tag tag-secondary">Secondary</a>
+        
+                        <br><br>
+                        <h3>Tags in Headings</h3>
+                        <p>Tags can also be placed in headings.</p>
+                        <h1>Heading <span class="tag tag-secondary">New</span></h1>
+                        <h2>Heading <span class="tag tag-secondary">New</span></h2>
+                        <h3>Heading <span class="tag tag-secondary">New</span></h3>
+                        <h4>Heading <span class="tag tag-secondary">New</span></h4>
+                        <h5>Heading <span class="tag tag-secondary">New</span></h5>
+                        <h6>Heading <span class="tag tag-secondary">New</span></h6>
+                    </article>
+                </section>
+
+                <section id="tooltips">
+                    <header><h1>Tooltips</h1></header>
+                    <article>
+                        <p>Tooltips are set via a data-tooltip attribute.</p>
+                        <p class="text-center">
+                            <button class="button button-primary" data-tooltip="I'm a tooltip!">Button with tooltip</button>
+                        </p>
+                        <p class="text-center">A tooltip on the <a href="#" data-tooltip="I'm a tooltip!" data-tooltip-pos="up">top</a></p>
+                        <p class="text-center">A tooltip on the <a href="#" data-tooltip="I'm a tooltip!" data-tooltip-pos="down">bottom</a></p>
+                        <p class="text-center">A tooltip on the <a href="#" data-tooltip="I'm a tooltip!" data-tooltip-pos="right">right</a></p>
+                        <p class="text-center">A tooltip on the <a href="#" data-tooltip="I'm a tooltip!" data-tooltip-pos="left">left</a></p>
+                        <p class="text-center">A tooltip thats always visible on the <a href="#" data-tooltip="I'm a tooltip!" data-tooltip-pos="right" data-tooltip-visible>right</a></p>
+                    </article>
+                </section>
+
+            </main> 
         </div>
             
     </body>
