@@ -7,6 +7,11 @@
         <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
         <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700' rel='stylesheet' type='text/css'>
         <link rel="stylesheet" href="dist/css/karma.min.css">
+        <style>
+        section {
+            margin-top: 5rem;
+        }
+        </style>
     </head>
     <body style="padding: 5rem;">
         <div class="container">
@@ -14,6 +19,7 @@
                 Examples
                 <ul>
                     <li><a href="#alerts">Alerts</a></li>
+                    <li><a href="#cards">Cards</a></li>
                     <li><a href="#checkboxes">Checkboxes and radios</a></li>
                     <li><a href="#input-groups">Input Groups</a></li>
                     <li><a href="#switches">Switches</a></li>
@@ -34,6 +40,172 @@
                         <div class="alert alert-danger">This is a danger alert!</div>
                         <div class="alert alert-warning">This is a warning alert!</div>
                         <div class="alert alert-info">This is an info alert!</div>
+                    </article> 
+                </section>
+                
+                <section id="cards">
+                    <header><h1>Cards</h1></header>
+                    <article>
+                        <p>Use the grid to layout the number of cards in a row.</p>
+                        <div class="row">
+                            <div class="col-12 col-md-6 col-lg-4">
+                                <div class="card">
+                                    <img class="card-img-top" src="http://via.placeholder.com/400x350/33c3f0/ffffff">
+                                    <div class="card-content">
+                                        <h3>Card Title</h3>
+                                        <p>img.card-img-top will add the card border radius.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-6 col-lg-4">
+                                <div class="card">
+                                    <div class="card-content">
+                                        <h3>Card Title</h3>
+                                        <p>img.card-img-bottom will add the card border radius.</p>
+                                    </div>
+                                    <img class="card-img-bottom" src="http://via.placeholder.com/400x350/33c3f0/ffffff">
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-6 col-lg-4">
+                                <div class="card">
+                                    <div class="card-content">
+                                        <h3 class="margin-zero">Card Title</h3>
+                                    </div>
+                                    <img src="http://via.placeholder.com/400x350/33c3f0/ffffff">
+                                    <div class="card-content">
+                                        <p>img does not need a class if in the middle.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <p>Cards can also have footers.</p>
+                        <div class="row">
+                            <div class="col-12 col-md-6 col-lg-4">
+                                <div class="card">
+                                    <img class="card-img-top" src="http://via.placeholder.com/400x350/33c3f0/ffffff">
+                                    <div class="card-content">
+                                        <h3>Card Title</h3>
+                                        <p>Lorem ipsum dolor sit amet, nullam adolescens sea at.</p>
+                                    </div>
+                                    <div class="card-footer">
+                                        <span class="muted pull-right">January 2018</span>
+                                        <span class="muted">Some Text</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-6 col-lg-4">
+                                <div class="card">
+                                    <div class="card-content">
+                                        <h3>Card Title</h3>
+                                        <p>Lorem ipsum dolor sit amet, nullam adolescens sea at.</p>
+                                    </div>
+                                    <img src="http://via.placeholder.com/400x350/33c3f0/ffffff">
+                                    <div class="card-footer">
+                                        <span class="muted pull-right">January 2018</span>
+                                        <span class="muted">Some Text</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-6 col-lg-4">
+                                <div class="card">
+                                    <div class="card-content">
+                                        <h3 class="margin-zero">Card Title</h3>
+                                    </div>
+                                    <img src="http://via.placeholder.com/400x350/33c3f0/ffffff">
+                                    <div class="card-content">
+                                        <p>Lorem ipsum dolor sit amet, nullam adolescens sea at.</p>
+                                    </div>
+                                    <div class="card-footer">
+                                        <span class="muted pull-right">January 2018</span>
+                                        <span class="muted">Some Text</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <p>Make the cards equal height by adding `.d-flex` to the columns and add `.fill` to any `.card-content` to expand and take the remaining space left over.</p>
+                        <div class="row">
+                            <div class="col-12 col-md-6 col-lg-4 d-flex">
+                                <div class="card">
+                                    <img class="card-img-top" src="http://via.placeholder.com/400x350/33c3f0/ffffff">
+                                    <div class="card-content fill">
+                                        <h3>Card Title</h3>
+                                        <p>The `.card-content.fill` panels will fill any remaining space.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-6 col-lg-4 d-flex">
+                                <div class="card">
+                                    <div class="card-content fill">
+                                        <h3>Card Title</h3>
+                                        <p>Lorem ipsum dolor sit amet, nullam adolescens sea at.</p>
+                                        <p>Lorem ipsum dolor sit amet, nullam adolescens sea at.</p>
+                                    </div>
+                                    <img class="card-img-bottom" src="http://via.placeholder.com/400x350/33c3f0/ffffff">
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-6 col-lg-4 d-flex">
+                                <div class="card">
+                                    <div class="card-content fill">
+                                        <h3>Card Title</h3>
+                                        <p>The `.fill` panels will fill any remaining space.</p>
+                                    </div>
+                                    <img class="card-img-bottom" src="http://via.placeholder.com/400x200/33c3f0/ffffff">
+                                    <div class="card-content">
+                                        <p>Without `.fill` it uses only what it needs.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <p>Overlay images with additional content.</p>
+                        <div class="row">
+                            <div class="col-12">
+                                <div class="card">
+                                    <div class="relative">
+                                        <img class="card-img-top" src="http://via.placeholder.com/800x300/33c3f0/ffffff">
+                                        <div class="card-content overlay c-white">
+                                            <h3>Card Title</h3>
+                                            <p>Lorem ipsum dolor sit amet, nullam adolescens sea at.</p>
+                                        </div>
+                                    </div>
+                                    <div class="card-footer small">
+                                        wrap the img and `.card-content` with a `.relative` and add `.overlay` to
+                                        overlay the `.card-content`.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <p>Without images.</p>
+                        <div class="row">
+                            <div class="col-12 col-md-6 col-lg-4 d-flex">
+                                <div class="card">
+                                    <div class="card-content">
+                                        <h3>Card Title</h3>
+                                        <p>Lorem ipsum dolor sit amet, nullam adolescens sea at.</p>
+                                    </div>
+                                    <div class="card-footer">
+                                        <a href="#">Link in footer</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-6 col-lg-4 d-flex">
+                                <div class="card">
+                                    <div class="card-content">
+                                        <h3>Card Title</h3>
+                                        <p>Lorem ipsum dolor sit amet, nullam adolescens sea at.</p>
+                                        <a href="#" class="button button-primary">Follow link</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-6 col-lg-4 d-flex">
+                                <div class="card">
+                                    <div class="card-content">
+                                        <h3>Card Title</h3>
+                                        <p>Adding an anchor with `.overlay` as the last element will overlay the whole card with a link</p>
+                                    </div>
+                                    <a href="#" class="overlay"></a>
+                                </div>
+                            </div>
+                        </div>
                     </article> 
                 </section>
 

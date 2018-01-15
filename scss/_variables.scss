@@ -18,6 +18,16 @@ $alerts: (
 ) !default;
 
 
+// Cards
+//––––––––––––––––––––––––––––––––––––––––––––––––––
+
+$card-border:                   solid 1px $border-color;
+$card-border-radius:            $global-radius;
+$card-content-padding:          2rem;
+$card-footer-padding:           1rem 2rem;
+$card-margin-bottom:            $generic-margin-bottom;
+
+
 // Checkboxes and Radios
 //–––––––––––––––––––––––––––––––––––––––––––––––––– 
 

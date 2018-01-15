@@ -1443,6 +1443,48 @@ blockquote{
   border:solid 1px #b2e9ff;
   color:#3e3e3e; }
 
+.card{
+  border:solid 1px #e6e6e6;
+  border-radius:0.25rem;
+  display:-webkit-box;
+  display:-webkit-flex;
+  display:-ms-flexbox;
+  display:flex;
+  -webkit-box-orient:vertical;
+  -webkit-box-direction:normal;
+  -webkit-flex-direction:column;
+  -ms-flex-direction:column;
+  flex-direction:column;
+  margin-bottom:1.5rem;
+  position:relative; }
+  .card img{
+    min-height:1px;
+    max-width:100%;
+    width:100%;
+    display:block;
+    height:auto; }
+  .card .card-img-top{
+    border-top-left-radius:0.25rem;
+    border-top-right-radius:0.25rem; }
+  .card .card-img-bottom{
+    border-bottom-left-radius:0.25rem;
+    border-bottom-right-radius:0.25rem; }
+  .card .card-content{
+    padding:2rem; }
+  .card .card-footer{
+    padding:1rem 2rem; }
+  .card .fill{
+    -webkit-box-flex:1;
+    -webkit-flex:1 1 auto;
+    -ms-flex:1 1 auto;
+    flex:1 1 auto; }
+  .card .overlay{
+    top:0;
+    right:0;
+    bottom:0;
+    left:0;
+    position:absolute; }
+
 ul.checkboxes,
 ul.radios{
   list-style:none; }
