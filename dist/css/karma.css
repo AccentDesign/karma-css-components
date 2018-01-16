@@ -1503,8 +1503,9 @@ ul.radios{
     cursor:pointer;
     display:inline-block;
     font-weight:400;
+    line-height:2.4rem;
     margin-bottom:0;
-    padding:0 4rem;
+    padding:0 3.6rem;
     position:relative; }
   .checkbox label span,
   ul.checkboxes label span,
@@ -1516,8 +1517,8 @@ ul.radios{
     position:absolute;
     background:white;
     border:1px solid #e6e6e6;
-    height:25px;
-    width:25px; }
+    height:2.4rem;
+    width:2.4rem; }
   .checkbox input,
   ul.checkboxes input,
   ul.radios input{
@@ -1549,16 +1550,16 @@ ul.checkboxes label span{
 
 .checkbox input[type=checkbox] + span:after,
 ul.checkboxes input[type=checkbox] + span:after{
-  top:7px;
+  top:0.672rem;
   right:auto;
   bottom:auto;
-  left:5px;
+  left:0.408rem;
   position:absolute;
-  border:3px solid #33c3f0;
+  border:0.3rem solid #33c3f0;
   border-top:none;
   border-right:none;
-  height:7px;
-  width:13px;
+  height:0.72rem;
+  width:1.296rem;
   -webkit-transform:rotate(-45deg);
   -o-transform:rotate(-45deg);
   transform:rotate(-45deg); }
@@ -1567,10 +1568,10 @@ ul.radios label span{
   border-radius:50%; }
 
 ul.radios input[type=radio] + span:after{
-  top:4px;
-  right:4px;
-  bottom:4px;
-  left:4px;
+  top:0.4rem;
+  right:0.4rem;
+  bottom:0.4rem;
+  left:0.4rem;
   position:absolute;
   background:#33c3f0;
   border-radius:50%; }

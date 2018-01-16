@@ -25,8 +25,9 @@ ul.radios {
         cursor: pointer;
         display: inline-block;
         font-weight: $checkbox-font-weight;
+        line-height: $checkbox-size;
         margin-bottom: 0;
-        padding: 0 4rem;
+        padding: 0 $checkbox-size * 1.5;
         position: relative;
     }
 
@@ -34,8 +35,8 @@ ul.radios {
         @include position($top: 0, $left: 0);
         background: $input-background;
         border: 1px solid $border-color;
-        height: 25px;
-        width: 25px;
+        height: $checkbox-size;
+        width: $checkbox-size;
     }
 
     input {
@@ -70,13 +71,19 @@ ul.checkboxes {
         border-radius: $global-radius;
     }
 
+    // this ensures the rotated tick stays in a good position relative to the size of the checkbox
+    $tick-top: $checkbox-size *.28;
+    $tick-left: $checkbox-size *.17;
+    $tick-height: $checkbox-size * .3;
+    $tick-width: $checkbox-size * .54;
+
     input[type=checkbox] + span:after {
-        @include position($top: 7px, $left: 5px);
-        border: 3px solid $checkbox-checked-color;
+        @include position($top: $tick-top, $left: $tick-left);
+        border: $checkbox-tick-width solid $checkbox-checked-color;
         border-top: none;
         border-right: none;
-        height: 7px;
-        width: 13px;
+        height: $tick-height;
+        width: $tick-width;
         transform: rotate(-45deg);
     }
 }
@@ -90,7 +97,7 @@ ul.radios {
     }
 
     input[type=radio] + span:after {
-        @include position(4px, 4px, 4px, 4px);
+        @include position($radio-dot-spacing, $radio-dot-spacing, $radio-dot-spacing, $radio-dot-spacing);
         background: $checkbox-checked-color;
         border-radius: 50%;
     }
