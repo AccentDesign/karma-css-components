@@ -1,38 +1,37 @@
 // Input Group
 //––––––––––––––––––––––––––––––––––––––––––––––––––
 
+
 .input-group {
     display: flex;
-}
 
-.input-group > * {
-    border-radius: 0!important;
-    margin-bottom: 0!important;
-}
+    > * {
+        border-radius: 0!important;
+        margin-bottom: 0!important;
+    }
 
-.input-group-addon {
-    padding: 0 $input-group-addon-y-padding;
-    white-space: nowrap;
-}
+    > input,
+    > select {
+        flex: 1 1 auto;
+        position: relative;
+        width: 1%;
+    }
 
-.input-group > input,
-.input-group-addon {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
+    .input-group-addon {
+        display: flex;
+        padding: 0 $input-group-addon-y-padding;
+        white-space: nowrap;
+        align-items: center;
+    }
 
-.input-group > input {
-    flex: 1 1 auto;
-    width: 1%;
-}
+    > *:first-child {
+        border-top-left-radius: $global-radius!important;
+        border-bottom-left-radius: $global-radius!important;
+    }
 
-.input-group > *:first-child {
-    border-top-left-radius: $global-radius!important;
-    border-bottom-left-radius: $global-radius!important;
-}
+    > *:last-child {
+        border-top-right-radius: $global-radius!important;
+        border-bottom-right-radius: $global-radius!important;
+    }
 
-.input-group > *:last-child {
-    border-top-right-radius: $global-radius!important;
-    border-bottom-right-radius: $global-radius!important;
 }
