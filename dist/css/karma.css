@@ -1614,8 +1614,8 @@ ul.radios input[type=radio] + span:after{
   display:inline-block;
   margin-bottom:0;
   position:relative;
-  width:60px;
-  height:34px; }
+  width:6rem;
+  height:3.4rem; }
   .switch input{
     display:none; }
   .switch .slider{
@@ -1634,13 +1634,13 @@ ul.radios input[type=radio] + span:after{
     content:"";
     display:block;
     position:absolute;
-    top:4px;
+    top:0.4rem;
     right:auto;
     bottom:auto;
-    left:4px;
+    left:0.4rem;
     position:absolute;
-    height:26px;
-    width:26px;
+    height:2.6rem;
+    width:2.6rem;
     background:white;
     border-radius:0.25rem;
     -webkit-transition:0.3s;
@@ -1649,11 +1649,11 @@ ul.radios input[type=radio] + span:after{
   .switch input:checked + .slider{
     background:#33c3f0; }
   .switch input:checked + .slider:before{
-    -webkit-transform:translateX(26px);
-    -o-transform:translateX(26px);
-    transform:translateX(26px); }
+    -webkit-transform:translateX(2.6rem);
+    -o-transform:translateX(2.6rem);
+    transform:translateX(2.6rem); }
   .switch .slider-round{
-    border-radius:34px; }
+    border-radius:3.4rem; }
   .switch .slider-round:before{
     border-radius:50%; }
 .tag{

@@ -21,11 +21,11 @@ $alerts: (
 // Cards
 //––––––––––––––––––––––––––––––––––––––––––––––––––
 
-$card-border:                   solid 1px $border-color;
-$card-border-radius:            $global-radius;
-$card-content-padding:          2rem;
-$card-footer-padding:           1rem 2rem;
-$card-margin-bottom:            $generic-margin-bottom;
+$card-border:                   solid 1px $border-color !default;
+$card-border-radius:            $global-radius !default;
+$card-content-padding:          2rem !default;
+$card-footer-padding:           1rem 2rem !default;
+$card-margin-bottom:            $generic-margin-bottom !default;
 
 
 // Checkboxes and Radios
@@ -33,9 +33,9 @@ $card-margin-bottom:            $generic-margin-bottom;
 
 $checkbox-checked-color:        color(primary) !default;
 $checkbox-font-weight:          400 !default;
-$checkbox-size:                 2.4rem;
-$checkbox-tick-width:           .3rem;
-$radio-dot-spacing:             .4rem;
+$checkbox-size:                 2.4rem !default;
+$checkbox-tick-width:           .3rem !default;
+$radio-dot-spacing:             .4rem !default;
 
 
 // Input Groups
@@ -47,14 +47,14 @@ $input-group-addon-y-padding:   1rem !default;
 // Switches
 //–––––––––––––––––––––––––––––––––––––––––––––––––– 
 
-$switch-height:                 34px;
-$switch-width:                  60px;
-$switch-padding:                4px;
-$switch-default-border-radius:  $global-radius;
-$switch-background:             color(secondary);
-$switch-background-on:          color(primary);
-$switch-slider-background:      color(white);
-$switch-slider-transition:      .3s;
+$switch-height:                 3.4rem !default;
+$switch-width:                  6rem !default;
+$switch-padding:                .4rem !default;
+$switch-default-border-radius:  $global-radius !default;
+$switch-background:             color(secondary) !default;
+$switch-background-on:          color(primary) !default;
+$switch-slider-background:      color(white) !default;
+$switch-slider-transition:      .3s !default;
 
 
 // Tags
