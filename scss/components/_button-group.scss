@@ -1,0 +1,31 @@
+// Button Group
+//––––––––––––––––––––––––––––––––––––––––––––––––––
+
+
+.button-group {
+    display: inline-flex;
+    flex-direction: row;
+
+    > .button {
+        flex: 1 0 auto;
+    }
+
+    > .button:not(:first-child) {
+        border-top-left-radius: 0;
+        border-bottom-left-radius: 0;
+        
+        @if ($button-group-collapse-dividing-borders) {
+            border-left: 0;
+        }
+    }
+
+    > .button:not(:last-child) {
+        border-top-right-radius: 0;
+        border-bottom-right-radius: 0;
+
+        @if ($button-group-collapse-dividing-borders) {
+            border-right: 0;
+        }
+    }
+
+}

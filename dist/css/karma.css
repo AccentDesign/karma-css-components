@@ -1443,6 +1443,28 @@ blockquote{
   border:solid 1px #b2e9ff;
   color:#3e3e3e; }
 
+.button-group{
+  display:-webkit-inline-box;
+  display:-webkit-inline-flex;
+  display:-ms-inline-flexbox;
+  display:inline-flex;
+  -webkit-box-orient:horizontal;
+  -webkit-box-direction:normal;
+  -webkit-flex-direction:row;
+  -ms-flex-direction:row;
+  flex-direction:row; }
+  .button-group > .button{
+    -webkit-box-flex:1;
+    -webkit-flex:1 0 auto;
+    -ms-flex:1 0 auto;
+    flex:1 0 auto; }
+  .button-group > .button:not(:first-child){
+    border-top-left-radius:0;
+    border-bottom-left-radius:0; }
+  .button-group > .button:not(:last-child){
+    border-top-right-radius:0;
+    border-bottom-right-radius:0; }
+
 .card{
   border:solid 1px #e6e6e6;
   border-radius:0.25rem;
