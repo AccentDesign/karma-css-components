@@ -83,7 +83,7 @@ input,
 optgroup,
 select,
 textarea{
-  font-family:"Open Sans", sans-serif;
+  font-family:"HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
   font-size:100%;
   line-height:1.15;
   margin:0; }
@@ -1118,7 +1118,7 @@ body{
   font-size:15px;
   line-height:1.6;
   font-weight:400;
-  font-family:"Open Sans", sans-serif;
+  font-family:"HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
   color:#3e3e3e;
   background:white; }
 
@@ -1137,7 +1137,7 @@ a{
   padding:1rem 1rem;
   color:#3e3e3e;
   text-align:center;
-  font-family:"Open Sans", sans-serif;
+  font-family:"HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
   font-size:1.5rem;
   font-weight:400;
   line-height:1.25;
@@ -1299,15 +1299,7 @@ fieldset{
   margin-bottom:1.5rem; }
 
 input[type="checkbox"], input[type="radio"]{
-  margin-right:1.5rem;
-  display:inline; }
-
-label.checkbox, label.radio{
-  font-weight:normal; }
-
-.radio label,
-.checkbox label{
-  font-weight:normal; }
+  margin-right:1rem; }
 
 hr{
   margin:1.5rem 0;
