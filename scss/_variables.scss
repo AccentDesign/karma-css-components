@@ -70,7 +70,9 @@ $tag-font-size:                 85% !default;
 $tag-font-weight:               400 !default;
 $tag-margin-right:              .5rem !default;
 $tag-padding:                   .4em .45em !default;
-$tag-anchor-transition:         background-color ease-in-out $animation-speed-fast, border-color ease-in-out $animation-speed-fast !default;
+$tag-anchor-transition:         background-color linear $animation-speed-fast,
+                                border-color linear $animation-speed-fast,
+                                color linear $animation-speed-fast !default;
 
 $tags: (
     // name                     background                      font-color

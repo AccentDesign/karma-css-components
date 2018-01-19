@@ -1686,9 +1686,9 @@ ul.radios input[type=radio] + span:after{
   border:solid 1px #f2f2f2;
   color:#111111; }
 .tag[href]{
-  -webkit-transition:background-color ease-in-out 250ms, border-color ease-in-out 250ms;
-  -o-transition:background-color ease-in-out 250ms, border-color ease-in-out 250ms;
-  transition:background-color ease-in-out 250ms, border-color ease-in-out 250ms; }
+  -webkit-transition:background-color linear 250ms, border-color linear 250ms, color linear 250ms;
+  -o-transition:background-color linear 250ms, border-color linear 250ms, color linear 250ms;
+  transition:background-color linear 250ms, border-color linear 250ms, color linear 250ms; }
 
 .tag-white[href]:hover{
   background:#e6e6e6;
@@ -1700,9 +1700,9 @@ ul.radios input[type=radio] + span:after{
   border:solid 1px #040404;
   color:white; }
 .tag[href]{
-  -webkit-transition:background-color ease-in-out 250ms, border-color ease-in-out 250ms;
-  -o-transition:background-color ease-in-out 250ms, border-color ease-in-out 250ms;
-  transition:background-color ease-in-out 250ms, border-color ease-in-out 250ms; }
+  -webkit-transition:background-color linear 250ms, border-color linear 250ms, color linear 250ms;
+  -o-transition:background-color linear 250ms, border-color linear 250ms, color linear 250ms;
+  transition:background-color linear 250ms, border-color linear 250ms, color linear 250ms; }
 
 .tag-black[href]:hover{
   background:black;
@@ -1714,9 +1714,9 @@ ul.radios input[type=radio] + span:after{
   border:solid 1px #1bbcee;
   color:white; }
 .tag[href]{
-  -webkit-transition:background-color ease-in-out 250ms, border-color ease-in-out 250ms;
-  -o-transition:background-color ease-in-out 250ms, border-color ease-in-out 250ms;
-  transition:background-color ease-in-out 250ms, border-color ease-in-out 250ms; }
+  -webkit-transition:background-color linear 250ms, border-color linear 250ms, color linear 250ms;
+  -o-transition:background-color linear 250ms, border-color linear 250ms, color linear 250ms;
+  transition:background-color linear 250ms, border-color linear 250ms, color linear 250ms; }
 
 .tag-primary[href]:hover{
   background:#10aee0;
@@ -1728,9 +1728,9 @@ ul.radios input[type=radio] + span:after{
   border:solid 1px #e3e3e3;
   color:#111111; }
 .tag[href]{
-  -webkit-transition:background-color ease-in-out 250ms, border-color ease-in-out 250ms;
-  -o-transition:background-color ease-in-out 250ms, border-color ease-in-out 250ms;
-  transition:background-color ease-in-out 250ms, border-color ease-in-out 250ms; }
+  -webkit-transition:background-color linear 250ms, border-color linear 250ms, color linear 250ms;
+  -o-transition:background-color linear 250ms, border-color linear 250ms, color linear 250ms;
+  transition:background-color linear 250ms, border-color linear 250ms, color linear 250ms; }
 
 .tag-secondary[href]:hover{
   background:#d7d7d7;
