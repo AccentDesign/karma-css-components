@@ -1675,6 +1675,7 @@ ul.radios input[type=radio] + span:after{
   display:inline-block;
   font-size:85%;
   font-weight:400;
+  margin-right:0.5rem;
   padding:0.4em 0.45em;
   line-height:1;
   text-align:center;
