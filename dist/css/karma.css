@@ -1,4 +1,4 @@
-/*! Karma-CSS v1.7.0 MIT License | http://karmacss.com | https://github.com/accentdesign/karma-css */
+/*! Karma-CSS v1.7.1 MIT License | http://karmacss.com | https://github.com/accentdesign/karma-css */
 /*! normalize.css v7.0.0 | MIT License | github.com/necolas/normalize.css */
 html{
   line-height:1.15;
@@ -1125,9 +1125,9 @@ body{
 a{
   color:#33c3f0;
   text-decoration:none;
-  -webkit-transition:color ease-in-out 250ms;
-  -o-transition:color ease-in-out 250ms;
-  transition:color ease-in-out 250ms; }
+  -webkit-transition:color linear 250ms;
+  -o-transition:color linear 250ms;
+  transition:color linear 250ms; }
   a:hover{
     color:#10aee0;
     text-decoration:none; }
@@ -1153,9 +1153,9 @@ a{
   -moz-user-select:none;
   -ms-user-select:none;
   user-select:none;
-  -webkit-transition:background-color ease-in-out 250ms, border-color ease-in-out 250ms;
-  -o-transition:background-color ease-in-out 250ms, border-color ease-in-out 250ms;
-  transition:background-color ease-in-out 250ms, border-color ease-in-out 250ms; }
+  -webkit-transition:background-color linear 250ms, border-color linear 250ms;
+  -o-transition:background-color linear 250ms, border-color linear 250ms;
+  transition:background-color linear 250ms, border-color linear 250ms; }
   .button:hover, .button:focus{
     color:#3e3e3e;
     background-color:white;
@@ -1223,9 +1223,9 @@ input[type="date"], input[type="datetime"], input[type="datetime-local"], input[
   margin-bottom:1.5rem;
   border:1px solid #e6e6e6;
   border-radius:0.25rem;
-  -webkit-transition:border-color ease-in-out 250ms;
-  -o-transition:border-color ease-in-out 250ms;
-  transition:border-color ease-in-out 250ms;
+  -webkit-transition:background linear 250ms, border-color linear 250ms;
+  -o-transition:background linear 250ms, border-color linear 250ms;
+  transition:background linear 250ms, border-color linear 250ms;
   font-size:1.5rem;
   padding:1rem 1rem;
   height:4rem;
@@ -1251,9 +1251,9 @@ textarea{
   margin-bottom:1.5rem;
   border:1px solid #e6e6e6;
   border-radius:0.25rem;
-  -webkit-transition:border-color ease-in-out 250ms;
-  -o-transition:border-color ease-in-out 250ms;
-  transition:border-color ease-in-out 250ms;
+  -webkit-transition:background linear 250ms, border-color linear 250ms;
+  -o-transition:background linear 250ms, border-color linear 250ms;
+  transition:background linear 250ms, border-color linear 250ms;
   max-width:100%; }
   textarea:focus{
     background:white;
@@ -1273,9 +1273,9 @@ select{
   margin-bottom:1.5rem;
   border:1px solid #e6e6e6;
   border-radius:0.25rem;
-  -webkit-transition:border-color ease-in-out 250ms;
-  -o-transition:border-color ease-in-out 250ms;
-  transition:border-color ease-in-out 250ms;
+  -webkit-transition:background linear 250ms, border-color linear 250ms;
+  -o-transition:background linear 250ms, border-color linear 250ms;
+  transition:background linear 250ms, border-color linear 250ms;
   font-size:1.5rem;
   padding:1rem 1rem;
   height:4rem;
@@ -1286,6 +1286,31 @@ select{
     outline:0; }
   select[multiple]{
     height:auto; }
+
+input::-webkit-input-placeholder,
+textarea::-webkit-input-placeholder{
+  color:#b9b9b9;
+  opacity:1; }
+
+input::-moz-placeholder,
+textarea::-moz-placeholder{
+  color:#b9b9b9;
+  opacity:1; }
+
+input:-ms-input-placeholder,
+textarea:-ms-input-placeholder{
+  color:#b9b9b9;
+  opacity:1; }
+
+input::-ms-input-placeholder,
+textarea::-ms-input-placeholder{
+  color:#b9b9b9;
+  opacity:1; }
+
+input::placeholder,
+textarea::placeholder{
+  color:#b9b9b9;
+  opacity:1; }
 
 label,
 legend{
@@ -1590,11 +1615,54 @@ ul.radios input[type=radio] + span:after{
   background:#33c3f0;
   border-radius:50%; }
 
+.icon-input{
+  max-width:100%;
+  display:-webkit-inline-box;
+  display:-webkit-inline-flex;
+  display:-ms-inline-flexbox;
+  display:inline-flex;
+  font-size:1.5rem;
+  margin-bottom:1.5rem;
+  position:relative; }
+  .icon-input input{
+    -webkit-box-flex:1;
+    -webkit-flex:1 1 auto;
+    -ms-flex:1 1 auto;
+    flex:1 1 auto;
+    font-size:1em;
+    margin:0;
+    padding-right:2.65em; }
+  .icon-input [class*="fa-"]{
+    top:0;
+    right:0;
+    bottom:auto;
+    left:auto;
+    position:absolute;
+    color:#b9b9b9;
+    height:100%;
+    font-size:1em;
+    line-height:1;
+    opacity:1;
+    pointer-events:none;
+    text-align:center;
+    width:2.65em; }
+  .icon-input [class*="fa-"]:before{
+    top:auto;
+    right:auto;
+    bottom:auto;
+    left:0;
+    position:absolute;
+    margin:-.5em 0;
+    text-align:center;
+    top:50%;
+    width:100%; }
+
 .input-group{
-  display:-webkit-box;
-  display:-webkit-flex;
-  display:-ms-flexbox;
-  display:flex; }
+  max-width:100%;
+  display:-webkit-inline-box;
+  display:-webkit-inline-flex;
+  display:-ms-inline-flexbox;
+  display:inline-flex; }
   .input-group > *{
     border-radius:0 !important;
     margin-bottom:0 !important; }

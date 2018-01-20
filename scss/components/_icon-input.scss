@@ -1,0 +1,38 @@
+// Icon Input
+//––––––––––––––––––––––––––––––––––––––––––––––––––
+
+
+.icon-input {
+    @include input-width;
+    display: inline-flex;
+    font-size: $input-font-size;
+    margin-bottom:  $input-margin-bottom;
+    position: relative;
+
+    input {
+        flex: 1 1 auto;
+        font-size: 1em;
+        margin: 0;
+        padding-right: $icon-input-icon-width;
+    }
+
+    [class*="#{$icon-input-icon-class-prefix}"] {
+        @include position($top: 0, $right: 0);
+        color: $icon-input-icon-color;
+        height: 100%;
+        font-size: 1em;
+        line-height: 1;
+        opacity: 1;
+        pointer-events: none;
+        text-align: center;
+        width: $icon-input-icon-width;
+    }
+
+    [class*="#{$icon-input-icon-class-prefix}"]:before {
+        @include position($left: 0);
+        margin: -.5em 0;
+        text-align: center;
+        top: 50%;
+        width: 100%;
+    }
+}
