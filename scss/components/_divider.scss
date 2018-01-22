@@ -1,0 +1,32 @@
+// Divider
+//––––––––––––––––––––––––––––––––––––––––––––––––––
+
+
+.divider {
+    align-items: $divider-items-alignment;
+    display: flex;
+    flex-direction: row;
+    margin: $divider-margin;
+
+    > .divider-content {
+        flex-grow: 0;
+
+        &:not(:first-child) {
+            margin-left: $divider-content-margin;
+        }
+
+        &:not(:last-child) {
+            margin-right: $divider-content-margin;
+        }
+
+        + .divider-content {
+            margin-left: 0;
+        }
+    }
+
+    > .divider-line {
+        flex-grow: 1;
+        height: $divider-line-width;
+        background-color: $divider-line-color;
+    }
+}

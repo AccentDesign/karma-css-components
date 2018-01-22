@@ -44,6 +44,16 @@ $checkbox-tick-width:           .3rem !default;
 $radio-dot-spacing:             .4rem !default;
 
 
+// Divider
+//–––––––––––––––––––––––––––––––––––––––––––––––––– 
+
+$divider-margin:                2rem 0;
+$divider-items-alignment:       center;  // center or baseline is best
+$divider-line-color:            $border-color;
+$divider-line-width:            2px;
+$divider-content-margin:        1.5rem;  // margin between content and line
+
+
 // Icon Input
 //–––––––––––––––––––––––––––––––––––––––––––––––––– 
 
