@@ -1705,7 +1705,8 @@ ul.radios input[type=radio] + span:after{
   display:-webkit-inline-flex;
   display:-ms-inline-flexbox;
   display:inline-flex; }
-  .input-group > *{
+  .input-group > *,
+  .input-group > .icon-input > *{
     border-radius:0 !important;
     margin-bottom:0 !important; }
   .input-group > input,
@@ -1727,10 +1728,12 @@ ul.radios input[type=radio] + span:after{
     -webkit-align-items:center;
     -ms-flex-align:center;
     align-items:center; }
-  .input-group > *:first-child{
+  .input-group > *:first-child,
+  .input-group > *:first-child.icon-input > input{
     border-top-left-radius:0.25rem !important;
     border-bottom-left-radius:0.25rem !important; }
-  .input-group > *:last-child{
+  .input-group > *:last-child,
+  .input-group > *:last-child.icon-input > input{
     border-top-right-radius:0.25rem !important;
     border-bottom-right-radius:0.25rem !important; }
 

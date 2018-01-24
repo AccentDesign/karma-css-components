@@ -6,7 +6,8 @@
     @include input-width;
     display: inline-flex;
 
-    > * {
+    > *,
+    > .icon-input > * {
         border-radius: 0!important;
         margin-bottom: 0!important;
     }
@@ -25,12 +26,14 @@
         align-items: center;
     }
 
-    > *:first-child {
+    > *:first-child,
+    > *:first-child.icon-input > input {
         border-top-left-radius: $global-radius!important;
         border-bottom-left-radius: $global-radius!important;
     }
 
-    > *:last-child {
+    > *:last-child,
+    > *:last-child.icon-input > input {
         border-top-right-radius: $global-radius!important;
         border-bottom-right-radius: $global-radius!important;
     }
