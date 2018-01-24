@@ -9,7 +9,22 @@
         <link rel="stylesheet" href="dist/css/karma.min.css">
         <style>
         section {
-            margin-top: 5rem;
+            margin-top: 8rem;
+            border: 1px solid #e6e6e6;
+        }
+        section header {
+            background: whitesmoke;
+            padding: 1rem 2rem;
+        }
+        section header h2 {
+            margin: 0;
+        }
+        section article {
+            padding: 2rem;
+        }
+        section article p.intro {
+            padding: 1rem;
+            background: whitesmoke;
         }
         </style>
     </head>
@@ -76,7 +91,7 @@
                 <section id="cards">
                     <header><h2>Cards</h2></header>
                     <article>
-                        <p>Use the grid to layout the number of cards in a row.</p>
+                        <p class="intro">Use the grid to layout the number of cards in a row.</p>
                         <div class="row">
                             <div class="col-12 col-md-6 col-lg-4">
                                 <div class="card">
@@ -108,7 +123,7 @@
                                 </div>
                             </div>
                         </div>
-                        <p>Cards can also have footers.</p>
+                        <p class="intro">Cards can also have footers.</p>
                         <div class="row">
                             <div class="col-12 col-md-6 col-lg-4">
                                 <div class="card">
@@ -152,7 +167,7 @@
                                 </div>
                             </div>
                         </div>
-                        <p>Make the cards equal height by adding `.d-flex` to the columns and add `.fill` to any `.card-content` to expand and take the remaining space left over.</p>
+                        <p class="intro">Make the cards equal height by adding `.d-flex` to the columns and add `.fill` to any `.card-content` to expand and take the remaining space left over.</p>
                         <div class="row">
                             <div class="col-12 col-md-6 col-lg-4 d-flex">
                                 <div class="card">
@@ -186,7 +201,7 @@
                                 </div>
                             </div>
                         </div>
-                        <p>Overlay images with additional content.</p>
+                        <p class="intro">Overlay images with additional content.</p>
                         <div class="row">
                             <div class="col-12">
                                 <div class="card">
@@ -204,7 +219,7 @@
                                 </div>
                             </div>
                         </div>
-                        <p>Without images.</p>
+                        <p class="intro">Without images.</p>
                         <div class="row">
                             <div class="col-12 col-md-6 col-lg-4 d-flex">
                                 <div class="card">
@@ -242,11 +257,11 @@
                 <section id="checkboxes">
                     <header><h2>Checkboxes and radios</h2></header>
                     <article>
-                        <p>Single checkbox</p>
+                        <p class="intro">Single checkbox</p>
                         <div class="checkbox">
                             <label for="cb1"><input id="cb1" type="checkbox"><span></span> Single Checkbox</label>
                         </div>
-                        <p>List</p>
+                        <p class="intro">List</p>
                         <ul class="checkboxes">
                             <li><label><input type="checkbox"><span></span> Checkbox 1</label></li>
                             <li><label><input type="checkbox"><span></span> Checkbox 2</label></li>
@@ -257,7 +272,7 @@
                             <li><label><input type="radio" name="radio1"><span></span> Radio 2</label></li>
                             <li><label><input type="radio" name="radio1"><span></span> Radio 3</label></li>
                         </ul>
-                        <p>Inline list</p>
+                        <p class="intro">Inline list</p>
                         <ul class="checkboxes">
                             <li class="d-inline-block"><label><input type="checkbox"><span></span> Checkbox 1</label></li>
                             <li class="d-inline-block"><label><input type="checkbox"><span></span> Checkbox 2</label></li>
@@ -332,7 +347,7 @@
                         </div>
                         <div class="icon-input">
                             <input type="password" placeholder="password">
-                            <span class="fa fa-unlock-alt"></span>
+                            <span class="fa fa-lock"></span>
                         </div>
                     </article>
                 </section>
@@ -340,7 +355,7 @@
                 <section id="input-groups">
                     <header><h2>Input Groups</h2></header>
                     <article>
-                        <p>Basic</p>
+                        <p class="intro">Basic</p>
                         <p>
                             <div class="input-group">
                                 <div class="input-group-addon">Before</div><input type="text">
@@ -350,13 +365,13 @@
                             <div class="input-group">
                                 <input type="text"><div class="input-group-addon">After</div>
                             </div>
-                        </p>    
+                        </p>
                         <p>
                             <div class="input-group">
                                 <div class="input-group-addon">Before</div><input type="text"><div class="input-group-addon">After</div>
                             </div>
                         </p>
-                        <p>Coloured</p>
+                        <p class="intro">Coloured</p>
                         <p>
                             <div class="input-group">
                                 <div class="input-group-addon b-silver">Before</div><input type="text">
@@ -372,7 +387,7 @@
                                 <div class="input-group-addon b-silver">Before</div><input type="text"><div class="input-group-addon b-silver">After</div>
                             </div>
                         </p>
-                        <p>With Buttons</p>
+                        <p class="intro">With Buttons</p>
                         <p>
                             <div class="input-group">
                                 <button class="button button-primary">Button</button><input type="text">
@@ -390,7 +405,7 @@
                                 <button class="button button-primary">Button</button>
                             </div>
                         </p>
-                        <p>Multiple Inputs</p>
+                        <p class="intro">Multiple Inputs</p>
                         <p>
                             <div class="input-group">
                                 <div class="input-group-addon b-silver">First name</div>
@@ -399,7 +414,7 @@
                                 <input type="text">
                             </div>
                         </p>
-                        <p>With icon inputs</p>
+                        <p class="intro">With icon inputs</p>
                         <p>
                             <div class="input-group">
                                 <div class="input-group-addon b-silver">Email</div>
@@ -450,37 +465,36 @@
                     <article>
                         <p>Tags scale to match the size of the immediate parent element by using relative font sizing and em units.</p>
 
-                        <h3>Basic Tags</h3>
-                        <p>Basic set of coloured tags.</p>
-                        <span class="tag tag-white">White</span>
-                        <span class="tag tag-black">Black</span>
-                        <span class="tag tag-primary">Primary</span>
-                        <span class="tag tag-secondary">Secondary</span>
-        
-                        <br><br>
-                        <h3>Anchor Tags</h3>
-                        <p>Tag classes can be placed on anchors, they have a rolover effect identical to a button.</p>
-                        <a href="#" class="tag tag-white">White</a>
-                        <a href="#" class="tag tag-black">Black</a>
-                        <a href="#" class="tag tag-primary">Primary</a>
-                        <a href="#" class="tag tag-secondary">Secondary</a>
-        
-                        <br><br>
-                        <h3>Tags in Headings</h3>
-                        <p>Tags can also be placed in headings.</p>
-                        <h1>Heading <span class="tag tag-secondary">New</span></h1>
-                        <h2>Heading <span class="tag tag-secondary">New</span></h2>
-                        <h3>Heading <span class="tag tag-secondary">New</span></h3>
-                        <h4>Heading <span class="tag tag-secondary">New</span></h4>
-                        <h5>Heading <span class="tag tag-secondary">New</span></h5>
-                        <h6>Heading <span class="tag tag-secondary">New</span></h6>
+                        <p class="intro">Basic set of coloured tags.</p>
+                        <p>
+                            <span class="tag tag-white">White</span>
+                            <span class="tag tag-black">Black</span>
+                            <span class="tag tag-primary">Primary</span>
+                            <span class="tag tag-secondary">Secondary</span>
+                        </p>
+                        <p class="intro">Tag classes can be placed on anchors, they have a rolover effect identical to a button.</p>
+                        <p>
+                            <a href="#" class="tag tag-white">White</a>
+                            <a href="#" class="tag tag-black">Black</a>
+                            <a href="#" class="tag tag-primary">Primary</a>
+                            <a href="#" class="tag tag-secondary">Secondary</a>
+                        </p>
+                        <p class="intro">Tags can also be placed in headings.</p>
+                        <p>
+                            <h1>Heading <span class="tag tag-secondary">New</span></h1>
+                            <h2>Heading <span class="tag tag-secondary">New</span></h2>
+                            <h3>Heading <span class="tag tag-secondary">New</span></h3>
+                            <h4>Heading <span class="tag tag-secondary">New</span></h4>
+                            <h5>Heading <span class="tag tag-secondary">New</span></h5>
+                            <h6>Heading <span class="tag tag-secondary">New</span></h6>
+                        </p>
                     </article>
                 </section>
 
                 <section id="tooltips">
                     <header><h2>Tooltips</h2></header>
                     <article>
-                        <p>Tooltips are set via a data-tooltip attribute.</p>
+                        <p class="intro">Tooltips are set via a data-tooltip attribute.</p>
                         <p class="text-center">
                             <button class="button button-primary" data-tooltip="I'm a tooltip!">Button with tooltip</button>
                         </p>

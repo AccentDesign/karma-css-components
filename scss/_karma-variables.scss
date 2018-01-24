@@ -1,8 +1,10 @@
-
 // Typography
 //––––––––––––––––––––––––––––––––––––––––––––––––––
 
-// Base font
-$base-font-family:      "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+// fonts
+@import url('https://fonts.googleapis.com/css?family=Lato:300,400,400i,600,700');
 
-$input-use-full-width:  false;
+// Base font
+$base-font-family:      "Lato", sans-serif;
+
+$input-use-full-width:  true;

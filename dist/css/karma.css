@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css?family=Lato:300,400,400i,600,700");
 /*! Karma-CSS v1.7.1 MIT License | http://karmacss.com | https://github.com/accentdesign/karma-css */
 /*! normalize.css v7.0.0 | MIT License | github.com/necolas/normalize.css */
 html{
@@ -83,7 +84,7 @@ input,
 optgroup,
 select,
 textarea{
-  font-family:"HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+  font-family:"Lato", sans-serif;
   font-size:100%;
   line-height:1.15;
   margin:0; }
@@ -1118,7 +1119,7 @@ body{
   font-size:15px;
   line-height:1.6;
   font-weight:400;
-  font-family:"HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+  font-family:"Lato", sans-serif;
   color:#3e3e3e;
   background:white; }
 
@@ -1137,7 +1138,7 @@ a{
   padding:1rem 1rem;
   color:#3e3e3e;
   text-align:center;
-  font-family:"HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+  font-family:"Lato", sans-serif;
   font-size:1.5rem;
   font-weight:400;
   line-height:1.25;
@@ -1229,7 +1230,7 @@ input[type="date"], input[type="datetime"], input[type="datetime-local"], input[
   font-size:1.5rem;
   padding:1rem 1rem;
   height:4rem;
-  max-width:100%; }
+  width:100%; }
   input[type="date"]:focus, input[type="datetime"]:focus, input[type="datetime-local"]:focus, input[type="email"]:focus, input[type="month"]:focus, input[type="number"]:focus, input[type="password"]:focus, input[type="search"]:focus, input[type="tel"]:focus, input[type="text"]:focus, input[type="url"]:focus, input[type="week"]:focus{
     background:white;
     border-color:#33c3f0;
@@ -1254,7 +1255,7 @@ textarea{
   -webkit-transition:background linear 250ms, border-color linear 250ms;
   -o-transition:background linear 250ms, border-color linear 250ms;
   transition:background linear 250ms, border-color linear 250ms;
-  max-width:100%; }
+  width:100%; }
   textarea:focus{
     background:white;
     border-color:#33c3f0;
@@ -1279,7 +1280,7 @@ select{
   font-size:1.5rem;
   padding:1rem 1rem;
   height:4rem;
-  max-width:100%; }
+  width:100%; }
   select:focus{
     background:white;
     border-color:#33c3f0;
@@ -1358,19 +1359,25 @@ dd{
   margin-bottom:.5rem; }
 
 table{
+  background-color:transparent;
   border-collapse:collapse;
   border-spacing:0;
+  font-size:90%;
   margin-bottom:1.5rem;
   max-width:100%;
   width:100%; }
 
-th,
-td{
+caption{
+  padding:0.85rem 0.85rem; }
+
+th{
   padding:0.85rem 0.85rem;
   text-align:left; }
 
 td{
-  border-top:1px solid #e6e6e6; }
+  border-top:1px solid #e6e6e6;
+  padding:0.85rem 0.85rem;
+  text-align:left; }
 
 .table-bordered{
   border:solid 1px #e6e6e6; }
@@ -1495,7 +1502,8 @@ blockquote{
   -ms-flex-direction:column;
   flex-direction:column;
   margin-bottom:1.5rem;
-  position:relative; }
+  position:relative;
+  width:100%; }
   .card img{
     min-height:1px;
     max-width:100%;
@@ -1650,7 +1658,7 @@ ul.radios input[type=radio] + span:after{
     background-color:#e6e6e6; }
 
 .icon-input{
-  max-width:100%;
+  width:100%;
   display:-webkit-inline-box;
   display:-webkit-inline-flex;
   display:-ms-inline-flexbox;
@@ -1692,7 +1700,7 @@ ul.radios input[type=radio] + span:after{
     width:100%; }
 
 .input-group{
-  max-width:100%;
+  width:100%;
   display:-webkit-inline-box;
   display:-webkit-inline-flex;
   display:-ms-inline-flexbox;
