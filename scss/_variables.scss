@@ -60,12 +60,14 @@ $divider-content-margin:        1.5rem;  // margin between content and line
 $icon-input-icon-color:         $input-placeholder-color !default;
 $icon-input-icon-class-prefix:  'fa-' !default;
 $icon-input-icon-width:         2.65em !default;
+$icon-input-margin-bottom:      $input-margin-bottom !default;
 
 
 // Input Groups
 //–––––––––––––––––––––––––––––––––––––––––––––––––– 
 
 $input-group-addon-y-padding:   1rem !default;
+$input-group-margin-bottom:     $input-margin-bottom !default;
 
 
 // Switches

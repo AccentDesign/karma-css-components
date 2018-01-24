@@ -5,6 +5,7 @@
 .input-group {
     @include input-width;
     display: inline-flex;
+    margin-bottom: $input-group-margin-bottom;
 
     > *,
     > .icon-input > * {
