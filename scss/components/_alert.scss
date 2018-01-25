@@ -8,7 +8,7 @@
     position: relative;
     padding: $alert-padding;
     margin-bottom: $generic-margin-bottom;
-    border: 1px solid $border-color;
+    border: $border-width solid $border-color;
     border-radius: $global-radius;
 }
 
@@ -24,7 +24,7 @@
 
     .alert-#{$name} {
         background: $alert-bg;
-        border: solid 1px $alert-border;
+        border: $border-width solid $alert-border;
         color: $alert-font;
     }
 

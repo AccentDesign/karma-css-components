@@ -34,7 +34,7 @@ ul.radios {
     label span {
         @include position($top: 0, $left: 0);
         background: $input-background;
-        border: 1px solid $border-color;
+        border: $border-width solid $border-color;
         height: $checkbox-size;
         width: $checkbox-size;
     }

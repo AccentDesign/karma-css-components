@@ -27,7 +27,7 @@ $button-group-collapse-dividing-borders:   false !default;
 // Cards
 //––––––––––––––––––––––––––––––––––––––––––––––––––
 
-$card-border:                   solid 1px $border-color !default;
+$card-border:                   solid $border-width $border-color !default;
 $card-border-radius:            $global-radius !default;
 $card-content-padding:          2rem !default;
 $card-footer-padding:           1rem 2rem !default;

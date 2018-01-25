@@ -28,7 +28,7 @@
 
     .tag-#{$name} {
         background: $tag-bg;
-        border: solid 1px $tag-border;
+        border: $border-width solid $tag-border;
         color: $tag-font;
     }
 
