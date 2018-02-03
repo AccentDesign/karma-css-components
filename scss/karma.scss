@@ -3,8 +3,8 @@
 @import "karma-variables";
 
 /* karma-css core */
-@import "karma-css/scss/variables";
-@import "karma-css/scss/import";
+@import "node_modules/karma-css/scss/variables";
+@import "node_modules/karma-css/scss/import";
 
 /* karma-css components */
 @import "variables";
@@ -13,4 +13,4 @@
 /* add your custom modules here */
 
 /* karma-css utilities */
-@import "karma-css/scss/utilities";
+@import "node_modules/karma-css/scss/utilities";
