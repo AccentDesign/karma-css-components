@@ -21,6 +21,11 @@ ul.checkboxes,
 ul.radios {
     margin-bottom: $input-margin-bottom;
     
+    input {
+        position: absolute;
+        visibility: hidden;
+    }
+
     label {
         cursor: pointer;
         display: inline-block;
@@ -31,7 +36,8 @@ ul.radios {
         position: relative;
     }
 
-    label span {
+    label:before {
+        @include pseudo;
         @include position($top: 0, $left: 0);
         background: $input-background;
         border: $border-width solid $border-color;
@@ -39,25 +45,20 @@ ul.radios {
         width: $checkbox-size;
     }
 
-    input {
-        position: absolute;
-        visibility: hidden;
-    }
-
-    input + span:after {
+    label:after {
         @include pseudo;
         opacity: 0;
     }
 
-    input:checked + span:after {
+    input:checked~label:after {
         opacity: 1;
     }
 
-    label:hover input:not(:checked):not(:disabled) + span:after {
+    input:not(:checked):not(:disabled)~label:hover:after {
         opacity: 0.5;
     }
     
-    label input:disabled + span {
+    input:disabled~label {
         cursor: not-allowed;
     }
 }
@@ -67,17 +68,17 @@ ul.radios {
 .checkbox,
 ul.checkboxes {
     
-    label span {
+    label:before {
         border-radius: $global-radius;
     }
 
     // this ensures the rotated tick stays in a good position relative to the size of the checkbox
-    $tick-top: $checkbox-size *.28;
-    $tick-left: $checkbox-size *.17;
+    $tick-top: $checkbox-size *.3;
+    $tick-left: $checkbox-size *.25;
     $tick-height: $checkbox-size * .3;
     $tick-width: $checkbox-size * .54;
 
-    input[type=checkbox] + span:after {
+    label:after {
         @include position($top: $tick-top, $left: $tick-left);
         border: $checkbox-tick-width solid $checkbox-checked-color;
         border-top: none;
@@ -92,13 +93,17 @@ ul.checkboxes {
 
 ul.radios {
     
-    label span {
+    label:before {
         border-radius: 50%;
     }
 
-    input[type=radio] + span:after {
-        @include position($radio-dot-spacing, $radio-dot-spacing, $radio-dot-spacing, $radio-dot-spacing);
+    $dot-size: $checkbox-size - ($radio-dot-spacing * 2);
+
+    label:after {
+        @include position($top: $radio-dot-spacing, $left: $radio-dot-spacing);
         background: $checkbox-checked-color;
         border-radius: 50%;
+        height: $dot-size;
+        width: $dot-size;
     }
 }

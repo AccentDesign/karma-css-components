@@ -1770,6 +1770,13 @@ ul.radios{
   margin-bottom:1.5rem;
 }
 
+.checkbox input,
+ul.checkboxes input,
+ul.radios input{
+  position:absolute;
+  visibility:hidden;
+}
+
 .checkbox label,
 ul.checkboxes label,
 ul.radios label{
@@ -1782,9 +1789,12 @@ ul.radios label{
   position:relative;
 }
 
-.checkbox label span,
-ul.checkboxes label span,
-ul.radios label span{
+.checkbox label:before,
+ul.checkboxes label:before,
+ul.radios label:before{
+  content:"";
+  display:block;
+  position:absolute;
   top:0;
   right:auto;
   bottom:auto;
@@ -1796,51 +1806,44 @@ ul.radios label span{
   width:2.4rem;
 }
 
-.checkbox input,
-ul.checkboxes input,
-ul.radios input{
-  position:absolute;
-  visibility:hidden;
-}
-
-.checkbox input + span:after,
-ul.checkboxes input + span:after,
-ul.radios input + span:after{
+.checkbox label:after,
+ul.checkboxes label:after,
+ul.radios label:after{
   content:"";
   display:block;
   position:absolute;
   opacity:0;
 }
 
-.checkbox input:checked + span:after,
-ul.checkboxes input:checked + span:after,
-ul.radios input:checked + span:after{
+.checkbox input:checked ~ label:after,
+ul.checkboxes input:checked ~ label:after,
+ul.radios input:checked ~ label:after{
   opacity:1;
 }
 
-.checkbox label:hover input:not(:checked):not(:disabled) + span:after,
-ul.checkboxes label:hover input:not(:checked):not(:disabled) + span:after,
-ul.radios label:hover input:not(:checked):not(:disabled) + span:after{
+.checkbox input:not(:checked):not(:disabled) ~ label:hover:after,
+ul.checkboxes input:not(:checked):not(:disabled) ~ label:hover:after,
+ul.radios input:not(:checked):not(:disabled) ~ label:hover:after{
   opacity:0.5;
 }
 
-.checkbox label input:disabled + span,
-ul.checkboxes label input:disabled + span,
-ul.radios label input:disabled + span{
+.checkbox input:disabled ~ label,
+ul.checkboxes input:disabled ~ label,
+ul.radios input:disabled ~ label{
   cursor:not-allowed;
 }
 
-.checkbox label span,
-ul.checkboxes label span{
+.checkbox label:before,
+ul.checkboxes label:before{
   border-radius:0.25rem;
 }
 
-.checkbox input[type=checkbox] + span:after,
-ul.checkboxes input[type=checkbox] + span:after{
-  top:0.672rem;
+.checkbox label:after,
+ul.checkboxes label:after{
+  top:0.72rem;
   right:auto;
   bottom:auto;
-  left:0.408rem;
+  left:0.6rem;
   position:absolute;
   border:0.3rem solid #33c3f0;
   border-top:none;
@@ -1851,18 +1854,20 @@ ul.checkboxes input[type=checkbox] + span:after{
   transform:rotate(-45deg);
 }
 
-ul.radios label span{
+ul.radios label:before{
   border-radius:50%;
 }
 
-ul.radios input[type=radio] + span:after{
+ul.radios label:after{
   top:0.4rem;
-  right:0.4rem;
-  bottom:0.4rem;
+  right:auto;
+  bottom:auto;
   left:0.4rem;
   position:absolute;
   background:#33c3f0;
   border-radius:50%;
+  height:1.6rem;
+  width:1.6rem;
 }
 
 .divider{
