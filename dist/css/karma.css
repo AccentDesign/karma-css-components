@@ -1941,14 +1941,13 @@ ul.radios input[type=radio] + span:after{
 }
 
 .icon-input [class*="fa-"]:before{
-  top:auto;
+  top:50%;
   right:auto;
   bottom:auto;
   left:0;
   position:absolute;
   margin:-.5em 0;
   text-align:center;
-  top:50%;
   width:100%;
 }
 
