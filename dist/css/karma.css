@@ -1347,16 +1347,15 @@ td{
 .table-bordered{
   border:solid 1px #e6e6e6;
 }
-
-.table-headed th{
+.table-headed > thead > tr > th,
+.table-headed > tbody > tr > th{
   background-color:#f0f0f0;
 }
-
-.table-striped tbody tr:nth-child(odd){
+.table-striped > tbody > tr:nth-child(odd){
   background-color:#fafafa;
 }
 
-.table-hover tbody tr:hover{
+.table-hover > tbody > tr:hover{
   background-color:whitesmoke;
 }
 

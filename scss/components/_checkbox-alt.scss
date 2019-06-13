@@ -1,0 +1,95 @@
+// Checkboxes and Radios
+//––––––––––––––––––––––––––––––––––––––––––––––––––
+
+
+// list specific
+
+ul.checkboxes,
+ul.radios {
+    list-style: none;
+
+    li {
+        margin-bottom: .5rem;
+        position: relative;
+    }
+}
+
+// shared styling
+
+.checkbox,
+ul.checkboxes,
+ul.radios {
+    margin-bottom: $input-margin-bottom;
+    
+    label {
+        cursor: pointer;
+        display: inline-block;
+        font-weight: $checkbox-font-weight;
+        line-height: $checkbox-size;
+        margin-bottom: 0;
+        padding: 0 $checkbox-size * 1.5;
+        position: relative;
+    }
+
+    label span {
+        @include position($top: 0, $left: 0);
+        background: $input-background;
+        border: $border-width solid $border-color;
+        height: $checkbox-size;
+        width: $checkbox-size;
+    }
+
+    input {
+        position: absolute;
+        visibility: hidden;
+    }
+
+    input + span:after {
+        @include pseudo;
+        border-color: $input-background;
+    }
+
+    input:checked + span {
+        background: $checkbox-checked-color;
+        border-color: $checkbox-checked-color;
+    }
+    
+    label input:disabled + span {
+        cursor: not-allowed;
+    }
+}
+
+// checkbox only styles
+
+.checkbox,
+ul.checkboxes {
+    
+    label span {
+        border-radius: $global-radius;
+    }
+
+    // this ensures the rotated tick stays in a good position relative to the size of the checkbox
+    $tick-top: $checkbox-size *.28;
+    $tick-left: $checkbox-size *.17;
+    $tick-height: $checkbox-size * .3;
+    $tick-width: $checkbox-size * .54;
+
+    input[type=checkbox] + span:after {
+        @include position($top: $tick-top, $left: $tick-left);
+        border: $checkbox-tick-width solid $input-background;
+        border-top: none;
+        border-right: none;
+        height: $tick-height;
+        width: $tick-width;
+        transform: rotate(-45deg);
+    }
+}
+
+// radio only styles
+
+ul.radios {
+    
+    label span {
+        border-radius: 50%;
+    }
+}
